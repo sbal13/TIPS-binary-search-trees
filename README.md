@@ -11,10 +11,10 @@ A binary tree is a data structure composed of connected nodes. A node contains t
 This might look like the following
 
 ```
-				 2
-			/     \
-		10       4
-	 /  \     / 
+         2
+      /     \
+    10       4
+   /  \     / 
  15    3  18
 ```
 
@@ -33,49 +33,55 @@ Consider inserting nodes in this order:
 
 ```
 Insert 4 at root:
-			4
+4
 
 Insert 2:
 	1. 2 < 4, so go left
-		 4
-		/
-	 2
+     4
+    /
+   2
 
 Insert 10:
 	1.10 > 4, so go right
-		 4
-		/ \
-	 2  10
+     4
+    / \
+   2  10
 
 Insert 9 :
 	1. 9 > 4, so go right
 	2. 9 < 10, so go left
-			4
-		/   \
-	 2     10
-				/
-			 9
+      4
+    /   \
+   2     10
+        /
+       9
+
+Notice that 9 "falls" down the tree, passing through 4 since it already has a child to the right and inserting itself as the left child of 10
 
 Insert 3:
 	1. 3 < 4, so go left
 	2. 3 > 2, so go right
-			4
-		/   \
-	 2     10
-		\   /
-		 3 9
+      4
+    /   \
+   2     10
+    \   /
+     3 9
+
+Notice that 3 "falls" down the tree, passing through 4 since it already has a child to the right and inserting itself as the right child of 2
 
 Insert 5:
 	1. 5 > 4, so go right
 	2. 5 < 10, so go left
 	3. 5 < 9, so go left
 
-			 4
-		/     \
-	 2       10
-		\     /
-		 3   9
-				/
-			 5
+       4
+    /     \
+   2       10
+    \     /
+     3   9
+        /
+       5
+
+Notice that 5 "falls" down the tree, passing through 4 since it already has a child to the right, then passing through 10 since it has a left child, then inserting itself as the left child of 9
 ```
 
