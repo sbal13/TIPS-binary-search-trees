@@ -2,7 +2,15 @@
 
 For this challenge, you'll be implementing some of the basic functionality of a Binary Search Tree!
 
-Your job is to fill out the `addValue` and `printSortedValues` functions in the `binary-search-tree.js` file. All of the js files are included in the `index.html`, so feel free to open it in your browser and test your code in the console. There is also an `index.js` file for you to write any test code/seed data.
+Your job is to fill out the `addValue` and `printSortedValues` functions in the `binary-search-tree.js` file. 
+
+## What you're given
+
+1. A basic skeleton of a binary search tree in `binary-search-tree.js`
+2. A function that creates nodes in `node.js`. Notice that it returns an object with three keys:
+value, left, and right
+3. An `index.js` for writing test code and seed data
+4. An `index.html` that you can open in your browser for testing in your console. All the `.js` files are required, so don't worry about any setup
 
 ## What is a Binary Tree?
 
